@@ -65,7 +65,6 @@ load-balancer\.tf This file has the IaC for the following resources.
 
 Port-443 allows data transmission over a secured network, while Port 80 enables data transmission in plain text. In this repo
 
-
 7- [**storage-account\.tf**](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account)
 : One storage account (azurerm_storage_account.frontend) will be generated.
 

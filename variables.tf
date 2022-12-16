@@ -8,6 +8,7 @@ variable "arm_vm_admin_password" {
   default     = "SUper.123-" # This should be hidden and passed as variable, doing this just for training purpose
 }
 
+
 variable "arm_frontend_instances" {
   description = "Number of front instances"
   default     = 2

@@ -1,7 +1,7 @@
 resource "azurerm_availability_set" "frontend" {
   name                         = "tf-avail-set"
-  location                     = azurerm_resource_group.terraform_sample.location
-  resource_group_name          = azurerm_resource_group.terraform_sample.name
+  location                     = "${azurerm_resource_group.terraform_sample.location}"
+  resource_group_name          = "${azurerm_resource_group.terraform_sample.name}"
   platform_fault_domain_count  = 3
   platform_update_domain_count = 20
   managed                      = true
@@ -13,7 +13,7 @@ resource "azurerm_availability_set" "frontend" {
 resource "azurerm_storage_container" "frontend" {
   count                 = var.arm_frontend_instances
   name                  = "tf-storage-container-${count.index}"
-  storage_account_name  = azurerm_storage_account.frontend.name
+  storage_account_name  = "${azurerm_storage_account.frontend.name}"
   container_access_type = "private"
 }
 
