@@ -106,7 +106,7 @@ It is time to run the terraform.
 terraform init
 
 #
-terraform plan -lock=false
+terraform plan
 
 #
 terraform apply
