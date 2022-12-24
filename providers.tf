@@ -11,7 +11,7 @@ terraform {
     organization = "emine"
 
     workspaces {
-      name = "dec19_terraform_test"
+      name = "TerraformAzure"
     }
   }
 }
